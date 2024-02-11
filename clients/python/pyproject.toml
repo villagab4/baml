@@ -61,10 +61,18 @@ mypy = "^1.5.1"
 types-decorator = "^5.1.8.4"
 types-mock = "^5.1.0.2"
 mock = "^5.1.0"
-ruff = "^0.0.291"
 black = "^23.9.1"
 types-colorama = "^0.4.15.12"
 types-regex = "^2023.10.3.0"
+ruff = "^0.2.1"
+
 
 [tool.ruff]
-ignore = ["E501"]
+# Assume Python 3.8
+target-version = "py38"
+line-length = 120
+indent-width = 2
+
+[tool.ruff.lint]
+select = ["E", "F"]
+fixable = ["ALL"]

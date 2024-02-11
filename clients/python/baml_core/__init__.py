@@ -1,10 +1,10 @@
 from .cache_manager import CacheManager
 from .provider_manager import (
-    LLMManager,
-    LLMChatMessage,
-    LLMChatProvider,
-    LLMProvider,
-    LLMResponse,
+  LLMManager,
+  LLMChatMessage,
+  LLMChatProvider,
+  LLMProvider,
+  LLMResponse,
 )
 from .errors.llm_exc import LLMException
 
@@ -12,12 +12,11 @@ from .errors.llm_exc import LLMException
 from .registrations import providers, caches  # noqa: F401
 
 __all__ = [
-    "register_llm_provider",
-    "LLMException",
-    "CacheManager",
-    "LLMManager",
-    "LLMChatMessage",
-    "LLMChatProvider",
-    "LLMProvider",
-    "LLMResponse",
+  "LLMException",
+  "CacheManager",
+  "LLMManager",
+  "LLMChatMessage",
+  "LLMChatProvider",
+  "LLMProvider",
+  "LLMResponse",
 ]
